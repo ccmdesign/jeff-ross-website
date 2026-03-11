@@ -40,8 +40,8 @@ $(document).ready(function() {
   if ($('.tour-dates').length) {
     var toursPromise = contentfulClient.getEntries({
       content_type: 'tour',
-      order: 'fields.datetime',
-      'fields.datetime[gte]': today,
+      // order: 'fields.datetime',
+      // 'fields.datetime[gte]': today,
       limit: 50,
     });
     
